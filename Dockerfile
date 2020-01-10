@@ -24,3 +24,5 @@ RUN     yum update -y && \
             htop python-devel python36 python36-pip xz-devel \
             vim-X11 vim-common vim-enhanced vim-minimal \
         yum clean all
+
+RUN     pip install --no-cache-dir virtualenv

@@ -26,5 +26,4 @@ RUN     yum update -y && \
             redhat-lsb-core screen \
         yum clean all
 
-
 RUN     pip install --no-cache-dir virtualenv

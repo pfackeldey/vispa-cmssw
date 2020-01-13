@@ -22,7 +22,9 @@ LABEL   org.label-schema.build-date=$BUILD_DATE \
 RUN     yum update -y && \
         yum install -y \
             htop python-devel python36 python36-pip xz-devel \
-            vim-X11 vim-common vim-enhanced vim-minimal \
+            vim-X11 vim-common vim-enhanced vim-minimal virtualenv \
+            redhat-lsb-core screen \
         yum clean all
+
 
 RUN     pip install --no-cache-dir virtualenv

@@ -23,7 +23,7 @@ RUN     yum update -y && \
         yum install -y \
             htop python-devel python36 python36-pip xz-devel \
             vim-X11 vim-common vim-enhanced vim-minimal virtualenv \
-            redhat-lsb-core screen \
+            redhat-lsb-core screen libtool-ltdl mlocate \
         yum clean all
 
 RUN     pip install --no-cache-dir virtualenv

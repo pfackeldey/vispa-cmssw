@@ -27,3 +27,5 @@ RUN     yum update -y && \
         yum clean all
 
 RUN     pip install --no-cache-dir virtualenv
+
+RUN     chmod o+w /etc/passwd /etc/group
